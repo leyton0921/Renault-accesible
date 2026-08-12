@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-sans: "Helvetica Neue", Arial, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-white text-renault-black antialiased;
+}
+
+/* Foco de teclado visible en toda la app (accesibilidad) */
+:focus-visible {
+  outline: 3px solid #111111;
+  outline-offset: 2px;
+}
+
+.touch-target {
+  min-height: 56px;
+}
