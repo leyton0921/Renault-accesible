@@ -1,13 +1,5 @@
-import { icons, HelpCircle, type LucideProps } from "lucide-react"
-
-function toPascalCase(str: string) {
-  return str
-    .split("-")
-    .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
-    .join("") as keyof typeof icons
-}
+import { DynamicIcon as LucideDynamicIcon, type LucideProps } from "lucide-react/dynamic"
 
 export function DynamicIcon({ name, ...props }: { name: string } & LucideProps) {
-  const Icon = icons[toPascalCase(name)] ?? HelpCircle
-  return <Icon {...props} />
+  return <LucideDynamicIcon name={name as any} {...props} />
 }
