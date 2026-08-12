@@ -13,9 +13,6 @@ export function CategoryCard({ category }: { category: CategoryWithCount }) {
       </div>
       <div className="min-w-0 flex-1">
         <h2 className="text-base font-semibold text-renault-black">{category.name}</h2>
-        {category.description && (
-          <p className="mt-0.5 truncate text-sm text-renault-gray-600">{category.description}</p>
-        )}
       </div>
       <span className="shrink-0 rounded-full bg-renault-gray-50 px-2.5 py-1 text-xs font-medium text-renault-gray-600">
         {category.video_count}

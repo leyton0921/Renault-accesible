@@ -18,17 +18,9 @@ export function VideoCard({ video }: { video: Video }) {
             <Play size={24} fill="currentColor" className="translate-x-0.5" />
           </span>
         </div>
-        {video.duration && (
-          <span className="absolute bottom-2 right-2 rounded bg-black/70 px-1.5 py-0.5 text-xs font-medium text-white">
-            {video.duration}
-          </span>
-        )}
       </div>
       <div className="p-4">
         <h3 className="font-semibold text-renault-black">{video.title}</h3>
-        {video.description && (
-          <p className="mt-1 line-clamp-2 text-sm text-renault-gray-600">{video.description}</p>
-        )}
       </div>
     </Link>
   )
