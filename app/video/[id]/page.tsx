@@ -21,10 +21,6 @@ export default async function VideoPage({ params }: { params: { id: string } }) 
           backHref={video.category_id ? `/categoria/${video.category_id}` : "/"}
         />
 
-        <div className="mt-6">
-          <h1 className="text-xl font-bold text-renault-black">{video.title}</h1>
-          {video.description && <p className="mt-2 text-renault-gray-600">{video.description}</p>}
-        </div>
       </main>
     </div>
   )

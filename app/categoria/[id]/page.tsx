@@ -33,9 +33,6 @@ export default async function CategoryPage({ params }: { params: { id: string } 
           </div>
           <div>
             <h1 className="text-2xl font-bold text-renault-black">{category.name}</h1>
-            {category.descripcion && (
-              <p className="text-renault-gray-600">{category.descripcion}</p>
-            )}
           </div>
         </div>
 

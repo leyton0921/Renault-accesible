@@ -6,7 +6,6 @@ export type Category = {
   status: boolean
   created_at: string
   updated_at: string
-  descripcion?: string
 }
 
 export type Video = {
